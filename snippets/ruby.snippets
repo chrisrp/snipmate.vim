@@ -502,3 +502,13 @@ snippet tas
 	task :${2:task_name => [:dependent, :tasks]} do
 		${3}
 	end
+snippet des
+	describe '${1:description}' do
+		${2}
+	end
+snippet it
+	it { expect(${1:subject}).to eql ${2} }
+snippet bf
+	before { ${1} }
+snippet let
+	let(:${1}) { ${2} }
