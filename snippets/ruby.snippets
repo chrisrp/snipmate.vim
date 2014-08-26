@@ -374,7 +374,11 @@ snippet seld
 	end		
 snippet lam
 	lambda { |${1:args}| ${2} }
-snippet do
+snippet do do..end
+	do
+		${1}
+	end
+snippet do do...var...end
 	do |${1:variable}|
 		${2}
 	end
@@ -519,7 +523,3 @@ snippet bed
 snippet let
 	let(:${1}) { ${2} }
 	${3}
-snippet do
-	do
-	  ${1}
-	end
