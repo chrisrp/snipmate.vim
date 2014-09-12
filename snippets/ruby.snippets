@@ -513,13 +513,17 @@ snippet des
 snippet it
 	it { expect(${1:subject}).to eql ${2} }
 	${3}
-snippet bef
+snippet bf
 	before { ${1} }
 	${2}
-snippet bed
+snippet bfd
 	before do
 	  ${1}
 	end
 snippet let
 	let(:${1}) { ${2} }
 	${3}
+snippet cont
+	context '${1}' do
+		${2}
+	end
